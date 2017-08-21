@@ -1,12 +1,13 @@
 'use strict';
 
 class Team {
-    constructor(teamName, university, points, captain) {
+    constructor(teamName, university, points, captain, checkedIn) {
         this.name = teamName;
         this.university = university;
         this.points = points;
         this.captain = captain;
-        this.teamMembers = [];
+        this.teamMembers = []; // Should be of class Player
+        this.checkedIn = checkedIn; // Is a boolean value
     }
     getTeamName() {
         return this.name;

@@ -14,7 +14,11 @@ var teams = []; // Holds the teams
 var pointsTable = fs.readFileSync('./pointsTable.txt').toString().split("\n");
 for(i in pointsTable) {
   var tempArray = pointsTable[i].split(",");
-  teams.push(new Team(tempArray[0].trim(), tempArray[1].trim(), tempArray[2].trim(), tempArray[3].trim()));
+  // Push individual bits of data into the team class and trim the
+  // white space from the txt file.
+  teams.push(new Team(tempArray[0].trim(), tempArray[1].trim(),
+  				      tempArray[2].trim(), tempArray[3].trim(),
+  				      tempArray[4].trim()));
 }
 tourney.setTeams(teams);
 
@@ -53,8 +57,8 @@ client.on("message", (message) => {
 	  		message.channel.send("Yeah boiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii!");
 	  		break;
 
-	  	case config.prefix + "Deanish":
-	  		message.channel.send("Deanish? The big baller shot caller?");
+	  	case config.prefix + "help":
+	  		message.channel.send("use ! followed by a command e.g. '!format' \n" + config.commands);
 	  		break;
 
 	  	case config.prefix + "teams":
@@ -80,10 +84,20 @@ client.on("message", (message) => {
 		case config.prefix + "tbm":
 			message.channel.send("This weeks tie break map is " + tourney.tieBreakMap);
 			break;
-	}
 
+		case config.prefix + "Deanish":
+	  		message.channel.send("Deanish? The big baller shot caller?");
+	  		break;
+
+	  	case config.prefix + "Addyal":
+	  		message.channel.send("For the spiciest of memes speak to Addyal");
+	  		break;
+	}
+    
+    // Loop through all the teams to get all the command options
 	tourney.getTeams().forEach(function(team) {
 
+		// Get details of the teams
 		if (message.content.startsWith(config.prefix + team.name + " details")) {
 			message.channel.send("Team name: " + team.name);
 			message.channel.send("University: " + team.university);
@@ -91,10 +105,9 @@ client.on("message", (message) => {
 			message.channel.send("Captain: " + team.captain);
 		}
 
+		// Get all members of a team
 		if (message.content.startsWith(config.prefix + team.name + " members")) {
-
 			team.teamMembers.forEach(function(member) {
-
 				if(member.IGN == team.captain){
 					message.channel.send("Captain: " + member.IGN);
 				}
@@ -102,6 +115,14 @@ client.on("message", (message) => {
 					message.channel.send(member.IGN);
 			});
 			
+		}
+
+		// Get the checkin status of a team
+		if (message.content.startsWith(config.prefix + team.name + " checkedin")) {
+			if(team.checkedIn == "true")
+				message.channel.send(team.name + " is checked in");
+			else
+				message.channel.send(team.name + " is not checked in");
 		}
 	});
 

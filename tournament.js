@@ -8,7 +8,7 @@ class Tournament {
         this.tourneyName = tourneyName;
         this.format = format;
         this.tieBreakMap = tieBreakMap;
-        this.teamArray = [];
+        this.teamArray = []; // Should be of class Team
     }
     getTeamName() {
         return this.name;

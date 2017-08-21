@@ -1,15 +1,15 @@
-Cambridge University NUEL Team,	University of Cambridge,	7, Mokyr#2102
-Björn to Win,	Manchester Metropolitan University,	6, Dubious#2866
-Warwick Angels,	University of Warwick,	6, Kio96#2901
-UoB Zeus,	University of Birmingham,	5, Subsidium#2587
-DUmfist,	Durham University,	5, munkfish#2583
-NO MERCI,	University of Manchester,	5, TomatoWato#2421
-Ameizing,	University of Southampton,	4, Maximus#2759
-You REEEEEE Ayy (lmao),	University of East Anglia,	3, Woody4life
-The Last BATHstion,	University of Bath,	3, Rinqed#2184
-Rogue Swan,	Swansea University,	3, Chimpy#21374
-Brookes Back Mountain,	Oxford Brookes University,	2, Iamatomatoe#2574
-Team Scrub™,	University of Manchester,	2, spoopy#21584
-Da Salty Ninjas,	Staffordshire University,	1, BkWrdPenguin#2564
-The Derby Ducklings,	University of Derby,	1, bakersbuns#2830
-KeelesBadMan,	Keele University,	1, smashley12#2872
+Cambridge University NUEL Team,	University of Cambridge,	7, Mokyr#2102, true
+Björn to Win,	Manchester Metropolitan University,	6, Dubious#2866, true
+Warwick Angels,	University of Warwick,	6, Kio96#2901, true
+UoB Zeus,	University of Birmingham,	5, Subsidium#2587, true
+DUmfist,	Durham University,	5, munkfish#2583, false
+NO MERCI,	University of Manchester,	5, TomatoWato#2421, false
+Ameizing,	University of Southampton,	4, Maximus#2759, false
+You REEEEEE Ayy (lmao),	University of East Anglia,	3, Woody4life, false
+The Last BATHstion,	University of Bath,	3, Rinqed#2184, false
+Rogue Swan,	Swansea University,	3, Chimpy#21374, false
+Brookes Back Mountain,	Oxford Brookes University,	2, Iamatomatoe#2574, false
+Team Scrub™,	University of Manchester,	2, spoopy#21584, false
+Da Salty Ninjas,	Staffordshire University,	1, BkWrdPenguin#2564, false
+The Derby Ducklings,	University of Derby,	1, bakersbuns#2830, false
+KeelesBadMan,	Keele University,	1, smashley12#2872, false

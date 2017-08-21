@@ -4,6 +4,7 @@
   "tourneyId": "2339",
   "tourneyName": "Overwatch Summer Tournament Finals",
   "format": "Two best of 3s",
-  "tieBreakMap": "Kings Row"
+  "tieBreakMap": "Kings Row",
+  "commands": "teams - Shows all teams\npoints - Shows the points table\ncompanion - Gives this weeks companion link\nformat - Shows the tournaments format\ntbm - Shows the tie break map for this week"
   
 }
